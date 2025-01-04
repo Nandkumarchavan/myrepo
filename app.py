@@ -1,7 +1,10 @@
-From flask import Flask
+from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
-@app.route("/info") def 1w(): return "Welcome to LW...Heloooooo."
+@app.route("/info")
+def lw():
+    return "Welcome to LW...Heloooooo."
 
-app.run(host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
